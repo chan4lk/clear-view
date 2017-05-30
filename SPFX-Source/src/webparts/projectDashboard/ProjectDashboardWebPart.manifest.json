@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "dd5a1afe-baa8-40fa-982d-2fef1699f459",
+  "alias": "ProjectDashboardWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "dd5a1afe-baa8-40fa-982d-2fef1699f459",
+    "group": { "default": "Under Development" },
+    "title": { "default": "ProjectDashboard" },
+    "description": { "default": "ProjectDashboard description" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "ProjectDashboard"
+    }
+  }]
+}

@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "clearview-client-side-solution",
+    "id": "c63acd35-dcde-4f29-8ba2-557497d5e229",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/clearview.sppkg"
+  }
+}

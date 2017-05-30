@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/projectDashboard/ProjectDashboardWebPart.js",
+      "manifest": "./src/webparts/projectDashboard/ProjectDashboardWebPart.manifest.json",
+      "outputPath": "./dist/project-dashboard.bundle.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "projectDashboardStrings": "webparts/projectDashboard/loc/{locale}.js"
+  }
+}

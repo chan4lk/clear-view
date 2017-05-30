@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "libraryName": "clearview",
+    "framework": "react",
+    "version": "1.0.0",
+    "libraryId": "c63acd35-dcde-4f29-8ba2-557497d5e229"
+  }
+}
