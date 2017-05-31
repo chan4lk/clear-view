@@ -4,7 +4,6 @@ import { IProjectDashboardProps } from './IProjectDashboardProps';
 import * as d3 from 'd3';
 import * as nv from 'nvd3';
 import { CommandBar } from 'office-ui-fabric-react/lib/CommandBar';
-import { Button } from 'office-ui-fabric-react/lib/Button';
 
 export default class ProjectDashboard extends React.Component<IProjectDashboardProps, void> {
   private itemsNonFocusable = [
@@ -17,7 +16,7 @@ export default class ProjectDashboard extends React.Component<IProjectDashboardP
       items: [
         {
           key: 'project',
-          name: 'New Project',
+          name: 'Project',
           icon: 'Mail'
         },
         {
@@ -68,7 +67,7 @@ export default class ProjectDashboard extends React.Component<IProjectDashboardP
             <div id='chart2'><svg></svg></div>
           </div>
           <div className='footer'>
-            copyright (c) ClearView 2017.
+            copyright, &copy; Clear view LTD 2017.
           </div>
         </div>
       </div>
