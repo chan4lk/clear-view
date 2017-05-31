@@ -3,13 +3,66 @@ import styles from './ProjectDashboard.module.scss';
 import { IProjectDashboardProps } from './IProjectDashboardProps';
 import * as d3 from 'd3';
 import * as nv from 'nvd3';
+import { CommandBar } from 'office-ui-fabric-react/lib/CommandBar';
+import { Button } from 'office-ui-fabric-react/lib/Button';
+
 export default class ProjectDashboard extends React.Component<IProjectDashboardProps, void> {
+  private itemsNonFocusable = [
+    {
+      key: 'newItem',
+      name: 'New',
+      icon: 'Add',
+      ariaLabel: 'New. Use left and right arrow keys to navigate',
+      onClick: () => { return; },
+      items: [
+        {
+          key: 'project',
+          name: 'New Project',
+          icon: 'Mail'
+        },
+        {
+          key: 'review',
+          name: 'Peer Review',
+          icon: 'Calendar'
+        }
+      ]
+    },
+    {
+      key: 'upload',
+      name: 'Stats',
+      icon: 'Upload',
+      onClick: () => { return; },
+      ['data-automation-id']: 'uploadNonFocusButton'
+    }
+  ];
+
+  private farItemsNonFocusable = [
+    {
+      key: 'saveStatus',
+      name: 'Your project is marked Green',
+      icon: 'CheckMark',
+      ['data-automation-id']: 'saveStatusCheckMark'
+    },
+    {
+      key: 'publish',
+      name: 'Submit to Era',
+      icon: 'ReadingMode',
+      onClick: () => { return; }
+    }
+  ];
+
   public render(): React.ReactElement<IProjectDashboardProps> {
     return (
       <div className={`${styles.projectDashboard} ms-Grid`}>
         <div className={styles.row} >
           <h1>Welcome to Clear View Project Dashboard</h1>
-          <div className='nav'></div>
+          <div className='nav'>
+            <CommandBar
+              isSearchBoxVisible={false}
+              items={this.itemsNonFocusable}
+              farItems={this.farItemsNonFocusable}
+            />
+          </div>
           <div className={styles.charts}>
             <div id='chart'><svg></svg></div>
             <div id='chart2'><svg></svg></div>
