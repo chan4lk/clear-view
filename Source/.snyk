@@ -1,0 +1,18 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - '@microsoft/sp-webpart-base > @microsoft/sp-lodash-subset > lodash':
+        patched: '2020-05-01T00:24:14.907Z'
+    - '@microsoft/sp-webpart-base > @microsoft/sp-page-context > @microsoft/sp-lodash-subset > lodash':
+        patched: '2020-05-01T00:24:14.907Z'
+    - '@microsoft/sp-webpart-base > @microsoft/sp-page-context > @microsoft/sp-http > @microsoft/sp-lodash-subset > lodash':
+        patched: '2020-05-01T00:24:14.907Z'
+    - '@microsoft/sp-webpart-base > @microsoft/sp-http > @microsoft/decorators > @microsoft/sp-loader > @microsoft/sp-lodash-subset > lodash':
+        patched: '2020-05-01T00:24:14.907Z'
+    - '@microsoft/sp-webpart-base > @microsoft/sp-page-context > @microsoft/sp-http > @microsoft/decorators > @microsoft/sp-loader > @microsoft/sp-lodash-subset > lodash':
+        patched: '2020-05-01T00:24:14.907Z'
+    - '@microsoft/sp-webpart-base > @microsoft/sp-page-context > @microsoft/sp-http > @microsoft/decorators > @microsoft/sp-loader > @microsoft/sp-core-library > @microsoft/sp-lodash-subset > lodash':
+        patched: '2020-05-01T00:24:14.907Z'
